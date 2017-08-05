@@ -13,6 +13,7 @@ public enum Location{
     
     public Location next(){return values()[ordinal()+1];}
     public Location previous(){return values()[ordinal()-1];}
+    public int getvalue(){return value;}
     
     
 }
