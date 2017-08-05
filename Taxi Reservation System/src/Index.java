@@ -61,8 +61,9 @@ public class Index{
             System.out.println("Taxi-"+(ride+1)+" is alloted");
             }
             else System.out.println("No Taxis Available");
-           }
+          }
         }
+       
     }
     
     public int getTaxi(Location location, int time, Taxi[] taxis){
@@ -71,7 +72,7 @@ public class Index{
         int ride = -1;
         
         for(int i =0;i<taxis.length;i++){
-         if(taxis[i].getLocation()==location&&taxis[i].getTime()==time){
+         if(taxis[i].getLocation()==location&&taxis[i].getTime()<=time){
              if(flag == 0){
                  leastrev = taxis[i].getRevenue();
                  flag = 1;
