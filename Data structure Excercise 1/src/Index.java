@@ -3,18 +3,22 @@ import java.util.*;
 public class Index {
 	
 	public static void main(String args[]){
+		
 		HashMap<String, LinkedList> family = new HashMap<String, LinkedList>();
 		Scanner in = new Scanner(System.in);
+		
+		System.out.println("::Enter the number of Pairs::");
 		int sets = in.nextInt();
 		
 		for(int i=0; i<sets; i++) {
-			System.out.println("Enter Son");
-			String son = in.next();
-			System.out.println("Enter Father");
+			
+			System.out.println("::Enter Father::");
 			String father = in.next();
+			System.out.println("::Enter Son::");
+			String son = in.next();
+			
 			if (family.containsKey(father)) {
-				LinkedList temp = family.get(father);
-				temp.add(son);
+				family.get(father).add(son);
 			}
 			else {
 				LinkedList sons = new LinkedList();
@@ -22,8 +26,6 @@ public class Index {
 				family.put(father, sons);
 			}
 		}
-		
-		System.out.println(family);
 		
 		System.out.println("Enter the person and  level");
 		String inp_father = in.next();
