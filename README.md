@@ -7,3 +7,4 @@
 4.Data Structure Excercise 1
 5.Occurances of a number
 6.Number to Alphabet
+7.Reverse the String
