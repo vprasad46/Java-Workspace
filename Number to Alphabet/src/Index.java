@@ -4,6 +4,7 @@ public class Index {
 	public static void main(String args[]){
 		
 		Scanner input= new Scanner(System.in);
+		System.out.println("::Enter the number for which the Column name to be displayed::");
 		int n = input.nextInt();
 		System.out.println(ExcelColumnFromNumber(n));
 	}
