@@ -22,6 +22,7 @@ public class Index {
 			}
 			else{
 				a[Character.getNumericValue(string.charAt(i))-1]++;
+				if(i+1<string.length())
 				a[Character.getNumericValue(string.charAt(i+1))-1]++;
 				i+=2;
 			}
