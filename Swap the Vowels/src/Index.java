@@ -28,7 +28,8 @@ public class Index {
 				flagy=false;
 			}
 			else{
-				x++;y--;
+				if(!flagx) x++;
+				if(!flagy) y--;
 			}
 			
 		}
